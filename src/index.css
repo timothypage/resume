@@ -69,3 +69,7 @@ a {
   text-decoration: none;
   color: var(--offblack);
 }
+
+.undefined {
+  background-color: red;
+}
