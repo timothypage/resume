@@ -50,3 +50,16 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+
+/* global colors */
+
+:root {
+  --offblack: hsl(24deg 5% 6%);
+  --primary: steelblue;
+  --urgent: hsl(0 55% 54%);
+}
+
+body {
+  color: var(--offblack);
+}
