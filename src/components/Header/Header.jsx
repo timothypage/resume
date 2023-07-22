@@ -11,7 +11,7 @@ import styles from "./Header.module.css"
 const Header = () => {
   return (
     <div class={styles.header}>
-      <div class={styles.icon}>
+      <div class={styles.tzIcon}>
         <p>tz</p>
       </div>
       <div class={styles.title}>
@@ -20,7 +20,7 @@ const Header = () => {
       <div class={styles.contact}>
         <ul class={styles.contactList}>
           <li>
-            <span><RiBusinessMailLine /></span>
+            <span class={styles.icon}><RiBusinessMailLine /></span>
             <a href="mailto:***REMOVED***">***REMOVED***</a>
           </li>
           <li>

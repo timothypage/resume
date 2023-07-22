@@ -4,7 +4,7 @@
   margin-bottom: 1rem;
 }
 
-.icon {
+.tz-icon {
   justify-self: center;
   align-self: center;
   width: 7rem;
@@ -40,10 +40,15 @@
 
   li {
     margin-top: 4px;
+    min-width: 18px;
 
     display: flex;
     align-items: center;
     gap: 15px;
+  }
+
+  .icon {
+    min-width: 18px;
   }
 }
 
