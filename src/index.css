@@ -51,6 +51,23 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* fonts */
+
+@font-face {
+  font-family: 'Commit Mono';
+  src: url('/fonts/CommitMono-375-Regular-subset.woff2') format('woff2');
+  font-weight: 375;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Commit Mono';
+  src: url('/fonts/CommitMono-700-Regular-subset.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* global colors */
 
@@ -66,9 +83,12 @@ p, h1, h2, h3, h4, h5, h6 {
   --gray900: hsl(24deg 6% 16%);
 }
 
+/* base styles */
+
 body {
   color: var(--offblack);
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 a {

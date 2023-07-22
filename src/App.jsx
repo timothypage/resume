@@ -21,7 +21,7 @@ function App () {
         <Experience className={styles.experience}/>
         <LicensesAndCertifications className={styles.licenses} />
       </main>
-      <p>&lt;&lt;EOF</p>
+      <p class={styles.eof}>&lt;&lt;EOF</p>
     </MaxWidthWrapper>
   )
 }
