@@ -14,11 +14,14 @@ function App () {
       <Header />
       <main class={styles.gridWrapper}>
         <Objective className={styles.objective}/>
-        <Skills className={styles.skills}/>
+        <div class={styles.leftSection}>
+          <Skills className={styles.skillsDisplay}/>
+          <Education className={styles.educationDisplay} />
+        </div>
         <Experience className={styles.experience}/>
-        <Education className={styles.education} />
         <LicensesAndCertifications className={styles.licenses} />
       </main>
+      <p>&lt;&lt;EOF</p>
     </MaxWidthWrapper>
   )
 }

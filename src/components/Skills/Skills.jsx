@@ -24,7 +24,7 @@ import styles from './Skills.module.css'
 
 const Skills = ({ className }) => {
   return (
-    <div class={`${className} ${styles.skills}`}>
+    <section class={`${className} ${styles.skills}`}>
       <h2>Skills</h2>
       <ul class={styles.skillsList}>
         <For each={skills}>{(skill, i) =>
@@ -33,7 +33,7 @@ const Skills = ({ className }) => {
           </li>
         }</For>
       </ul>
-    </div>
+    </section>
   )
 }
 
@@ -73,6 +73,7 @@ const skills = [
     level: 3,
     icon: <SiUbuntu />
   },
+  // TODO postgres
   {
     name: 'python',
     level: 2,

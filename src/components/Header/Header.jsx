@@ -33,7 +33,7 @@ const Header = () => {
           <li>
             <span><RiMapMapPinLine /></span>
             <span class={styles.address} aria-label="home address">
-              ***REMOVED***\nLittleton CO 80120
+              Littleton, CO
             </span>
           </li>
           <li>

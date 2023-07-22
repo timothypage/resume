@@ -1,1 +1,29 @@
-.experience {}
+.experience {
+
+  .companyInfo {
+    display: flex;
+    gap: 1rem;
+
+    align-items: baseline;
+
+    .time {
+      margin-left: auto;
+    }
+  }
+}
+
+.article:not(:first-of-type) {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 2px solid var(--gray300);
+}
+
+.title {
+  font-style: italic;
+}
+
+.accomplishment {
+  line-height: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+
