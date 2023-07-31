@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "solid-icons": "^1.0.11",
     "solid-js": "^1.7.8"
   },
   "devDependencies": {
