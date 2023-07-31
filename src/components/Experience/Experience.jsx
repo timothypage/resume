@@ -13,7 +13,7 @@ const Experience = ({ className }) => {
               <p class={styles.time}>{exp.length_of_service}</p>
             </div>
             <p class={styles.title}>{exp.title}</p>
-            <p>Technologies: {exp.technologies}</p>
+            <p class={styles.technologies}>Technologies: {exp.technologies}</p>
             <ul class={styles.accomplishments}>
               <For each={exp.accomplishments}>
                 {(acc, i) => <li class={styles.accomplishment}>{acc}</li>}
@@ -30,7 +30,7 @@ const experiences = [
   {
     company_name: 'Xentity',
     location: 'Golden, CO',
-    title: 'Geospatial Developer',
+    title: 'Geospatial Developer – GeoPlatform.gov',
     length_of_service: 'June 2020 – April 2023',
     technologies:
       'TypeScript, Angular, Node, AWS, Docker, PostgreSQL, Leaflet, Ruby',
@@ -51,6 +51,7 @@ const experiences = [
       'TypeScript, React, JQuery, Java/Spring, SQL Server, Oracle, GraphQL',
     accomplishments: [
       'Rewrote the frontend for FJA’s flagship application in React with unit and integration test coverage, greatly improving end user experience and overall software quality',
+      'Created a Medicare Explanation of Benefits (EOB) document generator based on Medicare Advantage plan configurations',
       'Supported legacy applications using BackboneJS, JQuery and Java/JSP'
     ]
   },

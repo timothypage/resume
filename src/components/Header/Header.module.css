@@ -1,7 +1,16 @@
 .header {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  grid-template-areas: 
+    'icon contact contact'
+    'title title title';
+  gap: 15px;
   margin-bottom: 1rem;
+
+  @media (min-width: 32rem) {
+    grid-template-areas:
+      'icon title contact';
+  }
 }
 
 .tz-icon {
@@ -19,6 +28,8 @@
 
   background-color: var(--primary);
   color: white;
+
+  grid-area: icon;
 }
 
 .title {
@@ -29,11 +40,15 @@
   align-items: center;
 
   line-height: 1;
-  font-size: clamp(1rem, calc(8vw - 2rem), 2.5rem);
+  font-size: clamp(1.2rem, calc(8vw - 2rem), 2.5rem);
+
+  grid-area: title;
 }
 
 .contact {
-  align-self: end;
+  align-self: center;
+
+  grid-area: contact;
 }
 
 .contact-list {
