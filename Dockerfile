@@ -10,7 +10,7 @@ COPY . /src/.
 RUN npm run build
 
 # Final image will only contain the following
-FROM nginx:1.25-alpine
+FROM nginx:1.25-alpine-slim
 COPY --from=build /src/dist/ /usr/share/nginx/html/
 COPY ./docker/nginx.conf /etc/nginx/nginx.conf
 
